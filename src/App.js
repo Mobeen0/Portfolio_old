@@ -1,0 +1,56 @@
+import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Background from './components/Background';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Project from './components/Project';
+import aboutInfo from './components/config/aboutInfo';
+import contactInfo from './components/config/contactInfo';
+import Scrollbars from 'react-custom-scrollbars';
+
+function App() {
+  const gridStyle ={display:'grid',
+                    gridTemplateColumns:"repeat(2,1fr)"};
+
+  const scrollbarStyle ={width:'100vw'
+                        ,height:'100vh'};
+
+
+  return (
+    <>
+      <Scrollbars style={scrollbarStyle}>
+      <div className = "Main">
+        <Navbar /> {/* This is the header Navbar*/}
+        <Background />
+          <Routes>
+            <Route path = '/' element = 
+            {
+              <Home />
+            }></Route>
+            <Route path = '/Project' element = {
+              <Project />
+            }></Route>
+            <Route path = '/Contact' element = {
+              <div style = {gridStyle}>
+                {contactInfo.map((item,index)=>(
+                  <Contact toAdd = {item}/>
+                ))}
+              </div>
+            }></Route>
+            <Route path = '/About' element = 
+            {<>
+              {aboutInfo.map((item,index)=>(
+                <About toAdd = {item} />
+              ))}
+            </>
+            }></Route>
+        </Routes>
+      </div>
+  </Scrollbars>  
+  </>
+  );
+}
+
+export default App;

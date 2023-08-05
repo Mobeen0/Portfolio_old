@@ -1,0 +1,39 @@
+.about{
+    margin:5%;
+    border-radius:1%;
+    display:flex;
+    align-items:center;
+    border:0.25vw solid white;
+    transform:translateY(100%);
+    opacity:0;
+    transition: 0.5s ease;
+    box-shadow:0px 0px 0.5vw 1vw slategray;
+}
+.about.firstTime{
+    opacity:1;
+    transform:translateY(0);
+}
+.about:hover{
+    cursor:pointer;
+    transform:scale(1.05);
+    transition:0.2s;
+}
+
+.uniLogo{
+    height:10vw;
+    width:10vw;
+    float:left;
+    margin:5%;
+}
+
+.myText{
+    font-family:Poppins;
+    font-size:1.2vw;
+    color:black;
+    text-align:justify;
+    margin-right:3%;
+
+}
+.aboutDesc{
+    margin-left:5%;
+}

@@ -1,0 +1,54 @@
+.Navigation{
+    width:100%;
+    height:11vh;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    overflow:hidden;
+    position:sticky;
+    top: 0;
+    z-index:1;
+    opacity:1;
+    box-shadow: 0 0 2px 0.01vh;
+}
+
+.Navigation ul{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    list-style:none;
+    height:100%;
+    width:100%;
+}
+.Navbaritem{
+    flex-basis:0;
+    flex-grow:1;
+    text-align:center;
+    line-height:11vh;
+    background:rgba(0,0,0,0.8);
+}
+.item{
+    display:block;
+    text-decoration:none;
+    color:white;
+    font-family: 'Roboto Mono',monospace;
+    font-size:1.1rem;
+    transition:0.5s;
+}
+.logoitem{
+    flex-basis:0;
+    flex-grow:3;
+}
+.logo {
+    height:20%;
+    width:20%;
+}
+
+.active{
+    border-bottom:1vh solid whitesmoke;
+    transition:0.1s;
+    line-height:10vh;
+}

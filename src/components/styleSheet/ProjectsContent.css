@@ -1,0 +1,105 @@
+.projectContainer{
+    min-height:50vh;
+    width:25vw;
+    border-radius: 23%/23%;
+    background-color:transparent;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    box-shadow: 0 0 0.3rem 0.4rem slategrey;
+    position:relative;
+    opacity:0;
+    transform:translateY(40%);
+    transition:0.4s;
+    margin-left:10.5%;
+    margin-top:10%;
+    margin-bottom:5%;
+    border-style:solid;
+    border-color:white;
+    border-width:0.1rem;
+}
+.projectContainer.projFirst{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.projectContainer:hover{
+    transform:scale(1.07);
+}
+
+.imageCont{
+    background:black;
+    flex-basis:0;
+    flex-grow:6;
+}
+
+.proj-Image{
+    max-height:100%;
+    max-width:100%;
+}
+
+
+.infoCont{
+    background:transparent;
+    flex-basis:0;
+    flex-grow:5;
+}
+.infoCont h1{
+    text-align:center;
+    font-size:1.3rem;
+    font-family:Poppins;
+}
+
+.repLink{
+    position:absolute;
+    border-radius:30%/100%;
+    width:7vw;
+    height:4vh;
+    bottom:5%;
+    right:8%;
+    background:black;
+    color:white;
+    border-style:solid;
+    border-width:0.15vw;
+    border-color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.proj-chain-image{
+    margin-right:4%;
+    margin-top:2%;
+}
+.repLink:hover{
+    border-color:black;
+    color:black;
+    background:white;
+    cursor:pointer;
+    transition:0.2s ease-in;
+}
+
+.proj-info-text{
+    color:black;
+    font-size:0.75rem;
+    line-height:130%;
+    font-family:Poppins;
+    margin-left:3%;
+    margin-right:3%;
+    text-align:justify;
+}
+.tagsCont{
+    background:transparent;
+    flex-basis:0;
+    flex-grow:2;
+    margin-bottom:7%;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+.tagsCont p{
+    margin-left:3.5%;
+    font-size:0.7rem;
+    text-align:left;
+    color:black;
+    font-family:Poppins;
+}

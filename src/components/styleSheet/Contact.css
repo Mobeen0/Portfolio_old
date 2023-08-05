@@ -1,0 +1,100 @@
+.contactDiv{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:35vh;
+    width:25vw;
+    margin:5%;
+    margin-left:20%;
+    border-style:solid;
+    border-width:4%;
+    border-color:white;
+    box-shadow:0px 0px 0.3vw 0.7vw slategray;
+    border-radius: 10%/15%;
+    transition:0.3s;
+    position:relative;
+    transform:translateY(40%);
+    opacity:0;
+    transition: 0.5s ease;
+    overflow:hidden;
+}
+.contactDiv.firstTime{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.contactDiv:hover{
+    transform:scale(1.05);
+}
+
+.platLogo{
+    color:black;
+    transform:scale(3);
+    margin-left:7%;
+    margin-right:5%;
+    margin-top:7%;
+}
+
+.contactText{
+    font-family:Poppins;
+    font-size:1.1rem;
+    color:black;
+    text-align:justify;
+    margin-right:3%;
+    margin-left:3%;
+}
+
+.platHeading{
+    font-family:Poppins;
+    font-weight:bold;
+    font-size:2vw;
+    color:black;
+    text-align:center;
+    width:100%;
+    flex-basis:0;
+    flex-grow:1;
+}
+
+.innerContact{
+    flex-basis:0;
+    flex-grow:8;
+    display:flex;
+    align-items:flex-start;
+    margin-top:5%;
+}
+.platLink{
+    border-radius:30%/100%;
+    font-family:Poppins;
+    width:7vw;
+    height:4vh;
+    background:black;
+    color:white;
+    text-align:center;
+    vertical-align:center;
+    border: 0.2vw solid white;
+    margin-left:5%;
+    vertical-align:Center;
+    position:absolute;
+    bottom:5%;
+    right:5%;
+    font-size:1vw;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-left:1%;
+    padding-right:1%;
+}
+.platLink:hover{
+    cursor:pointer;
+    background:white;
+    color:black;
+    border-color:black;
+    transition:0.2s ease-in;
+}
+.linkArrow{
+    color:slategrey;
+    margin-left:4%;
+    position:relative;
+    top:5%;
+}

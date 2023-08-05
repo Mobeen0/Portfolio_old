@@ -1,0 +1,29 @@
+.container{
+    display:flex;
+    align-items:center;
+    font-weight:bold;
+    font-family:'Poppins';
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(50%);
+}
+
+.container.homeLoad{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+.link {
+    text-decoration:none;
+    margin-left:5%;
+    margin-top:5%;
+    color:black;
+    font-size:3rem;
+}
+.MainItem{
+    color:slategrey;
+}
+.welcome{
+    font-size:1rem;
+}
