@@ -25,7 +25,7 @@ function App() {
         <Navbar /> {/* This is the header Navbar*/}
         <Background />
           <Routes>
-            <Route path = '/' element = 
+            <Route path = {['/','/Portfolio']} element = 
             {
               <Home />
             }></Route>
