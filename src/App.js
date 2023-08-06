@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <>
+    <div>
       <Scrollbars style={scrollbarStyle}>
       <div className = "Main">
         <Navbar /> {/* This is the header Navbar*/}
@@ -53,7 +53,7 @@ function App() {
         </Routes>
       </div>
   </Scrollbars>  
-  </>
+  </div>
   );
 }
 

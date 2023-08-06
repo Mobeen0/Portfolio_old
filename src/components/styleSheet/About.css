@@ -8,6 +8,7 @@
     opacity:0;
     transition: 0.5s ease;
     box-shadow:0px 0px 0.5vw 1vw slategray;
+    aspect-ratio: 8 / 1;
 }
 .about.firstTime{
     opacity:1;
@@ -28,7 +29,7 @@
 
 .myText{
     font-family:Poppins;
-    font-size:1.2vw;
+    font-size:1.2rem;
     color:black;
     text-align:justify;
     margin-right:3%;

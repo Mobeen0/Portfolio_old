@@ -2,12 +2,26 @@ import rushHour from '../../assets/rushHour.png';
 import olaDoc from '../../assets/olaDoc.jpg';
 import resturant from '../../assets/resturant.png';
 import clustering from '../../assets/clustering.png';
-import multiThread from '../../assets/multiThread.png';
+import multiThread from '../../assets/treasureHunter.png';
 import brickBreaker from '../../assets/brickBreaker.png';
 import bTree from '../../assets/bTree.png';
 import uefaLeague from '../../assets/uefaLeague.png';
 
 let projectsInfo = [
+{
+    "name": 'Image Clustering Algorithms',
+    "description": 'Using OpenCV library in C++ to detect lesion areas in medical images. I used K-mean (unsupervised learning) algorithm and Connected Component Clustering to seperate lesion areas from the non lesion areas in the Image and then compare both approaches side by side.',
+    "repoLink": 'https://github.com/Mobeen0/Clustering-Algorithms',
+    "tags":['C++','Data-Structures','Terminal-based','OpenCV','Images','machine-learning','Algorithms'],
+    "image": clustering
+},
+{
+    "name":'DataBase Management System',
+    "description":'Indexing large amount of csv data in a B Tree data structure and then calling CRUD operations on the data. The indexing also can be done on any field of the dataset (not only primary field) and duplicate cases are handled by creating a linked list inside the B Tree array.',
+    "repoLink":'https://github.com/Mobeen0/BTree_Txt_Based_Notes',
+    "tags":['C++','Data-Structures','Terminal-Based','Data-Indexing','Database','Algorithms'],
+    "image":bTree
+},
 {
     "name":'Rush Hour Game',
     "description":'Rush Hour is a game where the player is tasked to pick passengers and drop them off to their requested destinations. The game calculates score based on the amount of passengers dropped and a time limit is determines when the game should end.',
@@ -30,13 +44,6 @@ let projectsInfo = [
     "image":olaDoc
 },
 {
-    "name": 'Image Clustering Algorithms',
-    "description": 'Using OpenCV library in C++ to detect lesion areas in medical images. I used K-mean (unsupervised learning) algorithm and Connected Component Clustering to seperate lesion areas from the non lesion areas in the Image and then compare both approaches side by side.',
-    "repoLink": 'https://github.com/Mobeen0/Clustering-Algorithms',
-    "tags":['C++','Data-Structures','Terminal-based','OpenCV','Images','machine-learning','Algorithms'],
-    "image": clustering
-},
-{
     "name":"Treasure Hunters",
     "description": 'A multiplayer console based game built using SFML (for graphics) and POSIX (for threads) libraries. Each player is a separate thread and is controlled independent of other players. The game is time limited and player with the highest score at the end is the winner.',
     "repoLink": 'https://github.com/Mobeen0/Multiplayer_ThreadBased_Game',
@@ -49,13 +56,6 @@ let projectsInfo = [
     "repoLink":'https://github.com/Mobeen0/BrickBreaker-MASM-',
     "tags":['Assembly','MASM','x86','asm','low-level-language','Game','2D','Terminal-based'],
     "image":brickBreaker
-},
-{
-    "name":'DataBase Management System',
-    "description":'Indexing large amount of csv data in a B Tree data structure and then calling CRUD operations on the data. The indexing also can be done on any field of the dataset (not only primary field) and duplicate cases are handled by creating a linked list inside the B Tree array.',
-    "repoLink":'https://github.com/Mobeen0/BTree_Txt_Based_Notes',
-    "tags":['C++','Data-Structures','Terminal-Based','Data-Indexing','Database','Algorithms'],
-    "image":bTree
 },
 {
     "name":'UEFA Database Insights',

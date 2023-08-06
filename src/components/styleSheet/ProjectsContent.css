@@ -1,8 +1,8 @@
 .projectContainer{
-    min-height:50vh;
-    width:25vw;
+    width:28vw;
+    aspect-ratio: 1/1;
     border-radius: 23%/23%;
-    background-color:transparent;
+    background-color:white;
     display:flex;
     flex-direction:column;
     overflow:hidden;
@@ -11,9 +11,10 @@
     opacity:0;
     transform:translateY(40%);
     transition:0.4s;
-    margin-left:10.5%;
+    margin-left:7.5%;
     margin-top:10%;
     margin-bottom:5%;
+    margin-right:7.5%;
     border-style:solid;
     border-color:white;
     border-width:0.1rem;

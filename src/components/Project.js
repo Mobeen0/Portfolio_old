@@ -16,7 +16,6 @@ function Project() {
     
     let sepWords = searchContent.split(' ');
 
-
     return (
     <>
         <div className="searchBoxCont">

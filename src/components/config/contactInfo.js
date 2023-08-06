@@ -1,4 +1,4 @@
-import {FaDiscord,FaInstagram,FaLinkedin,FaFacebook,FaGithub,FaWhatsapp} from 'react-icons/fa';
+import {FaDiscord,FaInstagram,FaLinkedin,FaFacebook,FaGithub} from 'react-icons/fa';
 let contactInfo = [
     {
         "platform": 'Discord',
@@ -29,12 +29,6 @@ let contactInfo = [
         "link":"https://github.com/Mobeen0",
         "image":<FaGithub />,
         "text":'You can find all my projects through my public repositories on Github.'
-    },
-    {
-        "platform":'Whatsapp',
-        "link":"https://api.whatsapp.com/send?phone=923118507587",
-        "image":<FaWhatsapp/>,
-        "text":"You can also contact me on whatsapp."
     }
 ]
 
