@@ -11,8 +11,6 @@ import contactInfo from './components/config/contactInfo';
 import Scrollbars from 'react-custom-scrollbars';
 
 function App() {
-  const gridStyle ={display:'grid',
-                    gridTemplateColumns:"repeat(2,1fr)"};
 
   const scrollbarStyle ={width:'100vw'
                         ,height:'100vh'};
@@ -37,7 +35,7 @@ function App() {
               <Project />
             }></Route>
             <Route path = '/Contact' element = {
-              <div style = {gridStyle}>
+              <div className ="contactGrid">
                 {contactInfo.map((item,index)=>(
                   <Contact toAdd = {item}/>
                 ))}

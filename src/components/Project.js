@@ -3,12 +3,11 @@ import projectsInfo from './config/projectsInfo';
 import {useState} from 'react';
 import {FaSearch} from 'react-icons/fa';
 import './styleSheet/SearchBox.css';
+import './styleSheet/Project.css';
 
 function Project() {
     let [searchContent, setSearchContent] = useState('');
 
-    const gridStyleProject ={display:'grid',
-    gridTemplateColumns:"repeat(3,1fr)"};
 
     const handleChange = (searchBar)=>{
         setSearchContent(searchBar.target.value);
@@ -25,7 +24,7 @@ function Project() {
             </div>
         </ div>
 
-        <div style ={gridStyleProject}>
+        <div className = "projGrid">
             {
                 projectsInfo.filter((item)=>{
                     if(sepWords.length === 1 && sepWords[0] === '')
