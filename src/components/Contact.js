@@ -19,7 +19,7 @@ function Contact(props) {
         </div>
         <a href = {props.toAdd.link} target="_blank" rel = "noreferrer">
           <div className = "platLink">
-              {props.toAdd.platform}
+              <span className = "linkPlatform">{props.toAdd.platform} </span>
               <span className ="linkArrow">
                 <AiOutlineArrowRight />
               </span>

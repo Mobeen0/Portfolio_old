@@ -16,7 +16,7 @@
     display:flex;
     flex-direction:row;
     align-items:center;
-    justify-content:space-around;
+    justify-content:center;
     list-style:none;
     width:100%;
 }
@@ -24,8 +24,12 @@
     flex-basis:0;
     flex-grow:1;
     text-align:center;
-    line-height:11vh;
     background:rgba(0,0,0,0.8);
+    position:relative;
+    height:11vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .item{
     display:block;
@@ -34,7 +38,32 @@
     font-family: 'Roboto Mono',monospace;
     font-size:1.1rem;
     transition:0.5s;
-    overflow:auto;
+    overflow:hidden;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.item:hover{
+    background:white;
+    color:black;
+}
+
+.logoitemLink{
+    display:block;
+    text-decoration:none;
+    color:white;
+    font-family: 'Roboto Mono',monospace;
+    font-size:1.1rem;
+    transition:0.5s;
+    overflow:hidden;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
 }
 .logoitem{
     flex-basis:0;
@@ -43,10 +72,19 @@
 .logo {
     max-height:100%;
     max-width:18%;
+
+    @media(max-width:600px){
+        max-width:20vw;
+        aspect-ratio: 1/1;
+    }
 }
 
 .active{
     border-bottom:1vh solid whitesmoke;
     transition:0.1s;
     line-height:10vh;
+}
+
+.navIcon{
+    margin-right:0;
 }

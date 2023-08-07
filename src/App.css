@@ -10,8 +10,10 @@
 .contactGrid{
     display:grid;
     grid-template-columns: repeat(2,1fr);
+    justify-content:center;
+    align-content:center;
 
-    @media (max-width:800px){
+    @media (max-width:600px){
         grid-template-columns: repeat(1,1fr);
     }
 }

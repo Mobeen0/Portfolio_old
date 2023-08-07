@@ -17,6 +17,15 @@
     opacity:0;
     transition: 0.5s ease;
     overflow:hidden;
+
+    @media(max-width:600px){
+        width:auto;
+        height: 20vh;
+        aspect-ratio:1/1;
+        align-self:center;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 .contactDiv.firstTime{
     opacity:1;
@@ -65,8 +74,6 @@
 .platLink{
     border-radius:30%/100%;
     font-family:Poppins;
-    width:7vw;
-    height:4vh;
     background:black;
     color:white;
     text-align:center;
@@ -78,12 +85,15 @@
     bottom:5%;
     right:5%;
     font-size:1rem;
-    overflow:hidden;
     display:flex;
     align-items:center;
     justify-content:center;
     padding-left:1%;
     padding-right:1%;
+}
+
+.linkPlatform{
+    margin-left:7%;
 }
 .platLink:hover{
     cursor:pointer;
@@ -94,7 +104,9 @@
 }
 .linkArrow{
     color:slategrey;
-    margin-left:4%;
+    margin-left:3%;
+    margin-right:2%;
+    margin-top:4%;
     position:relative;
     top:5%;
 }

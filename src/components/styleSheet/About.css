@@ -21,10 +21,16 @@
 }
 
 .uniLogo{
-    height:10vw;
     width:10vw;
+    aspect-ratio: 1/1;
     float:left;
     margin:5%;
+
+    @media(max-width:500px){
+        width:auto;
+        height:15vh;
+        aspect-ratio: 7/8;
+    }
 }
 
 .myText{
