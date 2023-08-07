@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ae281842.css",
-    "main.js": "/Portfolio/static/js/main.edb6f31f.js",
+    "main.css": "/Portfolio/static/css/main.3fc00491.css",
+    "main.js": "/Portfolio/static/js/main.0cc419f7.js",
     "static/media/treasureHunter.png": "/Portfolio/static/media/treasureHunter.5cfdb25df54e55902bcf.png",
     "static/media/rushHour.png": "/Portfolio/static/media/rushHour.c46faacacaae9c567d33.png",
     "static/media/resturant.png": "/Portfolio/static/media/resturant.a831ecfca15cf1c148d6.png",
     "static/media/uefaLeague.png": "/Portfolio/static/media/uefaLeague.a6e83454aa2327b8b004.png",
-    "static/media/myNewLogo.png": "/Portfolio/static/media/myNewLogo.70c9966f3571e52b55ce.png",
+    "static/media/myNewLogo.png": "/Portfolio/static/media/myNewLogo.b629c50ab758178dc74b.png",
     "static/media/brickBreaker.png": "/Portfolio/static/media/brickBreaker.d37f6ed5c5f4e9b28e94.png",
     "static/media/olaDoc.jpg": "/Portfolio/static/media/olaDoc.a7650f5d8b4c3091c583.jpg",
     "static/media/fastLogo.png": "/Portfolio/static/media/fastLogo.98200a22d0868b55c905.png",
     "static/media/bTree.png": "/Portfolio/static/media/bTree.a0e731977e2970f9d1dd.png",
     "static/media/gaming.png": "/Portfolio/static/media/gaming.f8158caec3e648dfa873.png",
     "index.html": "/Portfolio/index.html",
-    "main.ae281842.css.map": "/Portfolio/static/css/main.ae281842.css.map",
-    "main.edb6f31f.js.map": "/Portfolio/static/js/main.edb6f31f.js.map"
+    "main.3fc00491.css.map": "/Portfolio/static/css/main.3fc00491.css.map",
+    "main.0cc419f7.js.map": "/Portfolio/static/js/main.0cc419f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae281842.css",
-    "static/js/main.edb6f31f.js"
+    "static/css/main.3fc00491.css",
+    "static/js/main.0cc419f7.js"
   ]
 }
