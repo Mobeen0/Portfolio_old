@@ -19,10 +19,10 @@
     border-color:white;
     border-width:0.1rem;
 
-    @media(max-width:600px){
+    @media(orientation:portrait){
         width:auto;
-        height:30vh;
-        aspect-ratio:7/8;
+        height:35vh;
+        aspect-ratio:10/9;
         margin-left:auto;
         margin-right:auto;
     }
@@ -57,6 +57,9 @@
     text-align:center;
     font-size:1.3rem;
     font-family:Poppins;
+    @media(orientation:portrait){
+        font-size:1.7rem;
+    }
 }
 
 .repLink{
@@ -95,6 +98,9 @@
     margin-left:3%;
     margin-right:3%;
     text-align:justify;
+    @media(orientation:portrait){
+        font-size:1rem;
+    }
 }
 .tagsCont{
     background:transparent;
@@ -110,4 +116,8 @@
     text-align:left;
     color:black;
     font-family:Poppins;
+
+    @media(orientation:portrait){
+        font-size:0.9rem;
+    }
 }

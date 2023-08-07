@@ -6,6 +6,9 @@
     transition:0.4s;
     opacity:0;
     transform:translateY(50%);
+    @media(orientation:portrait){
+        margin-top:25%;
+    }
 }
 
 .container.homeLoad{
@@ -20,6 +23,9 @@
     margin-top:5%;
     color:black;
     font-size:4.3rem;
+    @media(orientation:portrait){
+        font-size:5.2rem;
+    }
 }
 .MainItem{
     color:slategrey;
