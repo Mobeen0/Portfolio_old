@@ -12,7 +12,6 @@
     transform:translateY(40%);
     transition:0.4s;
     margin-left:7.5%;
-    margin-top:10%;
     margin-bottom:5%;
     margin-right:7.5%;
     border-style:solid;
@@ -21,12 +20,19 @@
 
     @media(orientation:portrait){
         width:auto;
-        height:35vh;
+        height:40vh;
         aspect-ratio:10/9;
         margin-left:auto;
         margin-right:auto;
+        overflow:auto;
+        
     }
 }
+
+.projectContainer::-webkit-scrollbar {
+    display: none; 
+  }
+
 .projectContainer.projFirst{
     opacity:1;
     transform:translateY(0);
