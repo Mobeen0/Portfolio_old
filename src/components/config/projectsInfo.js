@@ -6,6 +6,8 @@ import multiThread from '../../assets/treasureHunter.png';
 import brickBreaker from '../../assets/brickBreaker.png';
 import bTree from '../../assets/bTree.png';
 import uefaLeague from '../../assets/uefaLeague.png';
+import academicPortal from '../../assets/flexPortal.png';
+import hamiltonian from '../../assets/hamiltonian.png';
 
 let projectsInfo = [
 {
@@ -16,10 +18,17 @@ let projectsInfo = [
     "image": clustering
 },
 {
+    "name":'Flex Academic Portal',
+    "description": 'A full stack website built using ASP.NET framework. The website has different views for Students, Faculty and Acadmic officers. The students are only allowed to view their marks and gpa where as the faculty members can manage a students attendance and add marks.',
+    "repoLink":'https://github.com/Mobeen0/Academic_Portal_Website',
+    "tags":['C#','HTML','CSS','ASP.NET','SQL','Microsoft-SQL-Server','Wesbite','Full-Stack'],
+    "image":academicPortal
+},
+{
     "name":'DataBase Management System',
     "description":'Indexing large amount of csv data in a B Tree data structure and then calling CRUD operations on the data. The indexing also can be done on any field of the dataset (not only primary field) and duplicate cases are handled by creating a linked list inside the B Tree array.',
     "repoLink":'https://github.com/Mobeen0/BTree_Txt_Based_Notes',
-    "tags":['C++','Data-Structures','Terminal-Based','Data-Indexing','Database','Algorithms'],
+    "tags":['C++','Data-Structures','Terminal-Based','Data-Indexing','Database','Algorithms','Nodes'],
     "image":bTree
 },
 {
@@ -28,6 +37,13 @@ let projectsInfo = [
     "repoLink":'https://github.com/Mobeen0/Rush_Hour_Game', // remember to change this to the correct link
     "tags":['C++','Glut','Terminal-Based','Programming Fundamentals','Game','2D','File-Handling'],
     "image":rushHour
+},
+{
+    "name":'Hamiltonian Circuit',
+    "description":'Given a set of edges of an undirected graph, this algorithm can find the cheapest hamiltonian circuit in the graph and output the path along with the minimum cost. I used the backtracking algorithm to achieve this result and the time factorial was O(n!).',
+    "repoLink":'https://github.com/Mobeen0/Cheapest_Hamiltonian_Circuit',
+    "tags":['C++','Algorithms','Graphs','Undirected','Nodes','minimum-cost','Efficient'],
+    "image": hamiltonian
 },
 {
     "name":'Restaurant Website',
