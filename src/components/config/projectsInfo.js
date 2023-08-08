@@ -21,7 +21,7 @@ let projectsInfo = [
     "name":'Flex Academic Portal',
     "description": 'A full stack website built using ASP.NET framework. The website has different views for Students, Faculty and Acadmic officers. The students are only allowed to view their marks and gpa where as the faculty members can manage a students attendance and add marks.',
     "repoLink":'https://github.com/Mobeen0/Academic_Portal_Website',
-    "tags":['C#','HTML','CSS','ASP.NET','SQL','Microsoft-SQL-Server','Wesbite','Full-Stack'],
+    "tags":['C#','HTML','CSS','ASP.NET','SQL','Microsoft-SQL-Server','Website','Full-Stack'],
     "image":academicPortal
 },
 {
