@@ -33,7 +33,7 @@ function App() {
             }></Route>
             <Route path = '/Project' element = {
               <Project />
-            }></Route>
+             }></Route>
             <Route path = '/Contact' element = {
               <div className ="contactGrid">
                 {contactInfo.map((item,index)=>(

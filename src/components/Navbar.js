@@ -2,12 +2,11 @@ import './styleSheet/Navbar.css';
 import logo from '../assets/myNewLogo.png';
 import { Link,NavLink } from "react-router-dom";
 import menuBarItems from './config/menuBarItems';
-
-function Navbar(){
+function Navbar(props){
 
 
     return(
-        <nav className = "Navigation">
+        <nav className = {`Navigation`}>
             <ul>
             <li className = "logoitem" >
                     <Link className = "logoitemLink" to = '/'>

@@ -48,7 +48,8 @@
 
 
 .item:hover{
-    background:white;
+    transition:ease-in-out 0.1s;
+    background:linear-gradient(to top,white,rgb(105, 158, 169),white);
     color:black;
 }
 
