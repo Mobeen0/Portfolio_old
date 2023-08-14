@@ -1,5 +1,5 @@
 import {useState,useEffect,useRef} from 'react';
-import {FaLink} from 'react-icons/fa';
+import {FaGithub} from 'react-icons/fa';
 import './styleSheet/ProjectsContent.css';
 
 function ProjectsContent(props) {
@@ -43,7 +43,7 @@ function ProjectsContent(props) {
             </div>
             <a href={props.toAdd.repoLink} target="_blank" rel = "noreferrer">
                 <div className = "repLink">
-                    <span className= "proj-chain-image"><FaLink /></span>
+                    <span className= "proj-chain-image"><FaGithub /></span>
                     <span className = "proj-link-text">Link  </span>
                 </div>
             </a>

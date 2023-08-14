@@ -15,8 +15,9 @@
     background-color:rgba(153, 191, 196,0.8);
 }
 .Navigation.mobileNav{
-    height:50vh;
-    background:rgba(0,0,0,0.8);
+    position:fixed;
+    height:100vh;
+    background:rgba(0,0,0,0.87);
 }
 
 .list1{
@@ -133,10 +134,26 @@
     }
     .list2{
         display:none;
+        opacity:0;
+        transform:translateY(-50%);
+        transition: opacity 0.5s ease,transform 0.5s ease;
     }
     .list2.mobileNav{
         display:flex;
         flex-direction:column;
         background:transparent;
+        opacity:1;
+        transform:translateY(0);
+    }
+    .item{
+        font-size:2.2rem;
+        display:flex;
+        justify-content:center;
+    }
+    .navIcon{
+        margin-right:5%;
+    }
+    .active{
+        border:none;
     }
 }
