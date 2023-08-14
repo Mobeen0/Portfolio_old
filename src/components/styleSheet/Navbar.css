@@ -1,9 +1,8 @@
 .Navigation{
     width:100%;
-    height:11vh;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
     border:none;
     overflow:hidden;
     position:sticky;
@@ -11,22 +10,42 @@
     z-index:1;
     opacity:1;
 }
+.Navigation.shad{
+    box-shadow:0px 0px 0.2vw 0.5vw slategray;
+    background-color:rgba(153, 191, 196,0.8);
+}
+.Navigation.mobileNav{
+    height:50vh;
+    background:rgba(0,0,0,0.8);
+}
 
-.Navigation ul{
+.list1{
+    flex-basis:0;
+    flex-grow:4;
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:center;
     list-style:none;
-    width:100%;
+}
+.list1.mobileNav{
+    display:none;
+}
+
+.list2{
+    align-self:stretch;
+    flex-basis:0;
+    flex-grow:6;
+    display:flex;
+    align-items:stretch;
+    justify-content:center;
+    background:rgba(0,0,0,0.8);
 }
 .Navbaritem{
     flex-basis:0;
     flex-grow:1;
     text-align:center;
-    background:rgba(0,0,0,0.8);
     position:relative;
-    height:11vh;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -44,6 +63,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
+    
 }
 
 
@@ -65,26 +85,58 @@
     display:flex;
     align-items:center;
 }
+
+
 .logoitem{
     flex-basis:0;
     flex-grow:3;
+    max-height:100%;
 }
 .logo {
     max-height:100%;
-    max-width:18%;
+    max-width:100%;
+    transform:scale(1.5);
 
-    @media(orientation:portrait){
-        max-width:20vw;
-        aspect-ratio: 1/1;
-    }
+}
+
+.logoFit{
+    display:block;
+    height:10vh;
+    margin-left:3%;
 }
 
 .active{
     border-bottom:1vh solid whitesmoke;
     transition:0.1s;
-    line-height:10vh;
 }
 
 .navIcon{
     margin-right:0;
+}
+.hammerDown{
+    position:absolute;
+    top:20%;
+    right:5%;
+    font-size:4.3rem;
+    display:none;
+}
+
+@media (orientation:portrait){
+    .hammerDown{
+        display:block;
+        z-index:3;
+    }
+    .hammerDown.mobileNav{
+        top:4%;
+        right:5%;
+        color:white;
+    }
+    .list2{
+        display:none;
+    }
+    .list2.mobileNav{
+        display:flex;
+        flex-direction:column;
+        background:transparent;
+    }
 }

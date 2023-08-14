@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
+import {useState,useRef} from 'react';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './components/Home';
@@ -11,16 +12,25 @@ import contactInfo from './components/config/contactInfo';
 import Scrollbars from 'react-custom-scrollbars';
 
 function App() {
-
+  let scrollRef  = useRef();
+  let [shad,setShad] = useState(false); 
   const scrollbarStyle ={width:'100vw'
                         ,height:'100vh'};
 
+ let myFunc = ()=>{
+    if(scrollRef.current.getScrollTop() > 20.0){
+      setShad(true);
+    }
+    else{
+      setShad(false);
+    }
+ }
 
   return (
     <div>
-      <Scrollbars style={scrollbarStyle}>
+      <Scrollbars style={scrollbarStyle} onScroll = {myFunc} ref = {scrollRef}>
       <div className = "Main">
-        <Navbar /> {/* This is the header Navbar*/}
+        <Navbar navBool = {shad} /> {/* This is the header Navbar*/}
         <Background />
           <Routes>
             <Route path = '/' element = 
