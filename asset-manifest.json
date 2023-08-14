@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.49a17a04.css",
-    "main.js": "/Portfolio/static/js/main.a8d205ef.js",
+    "main.css": "/Portfolio/static/css/main.bd2322dd.css",
+    "main.js": "/Portfolio/static/js/main.c55d82b8.js",
     "static/media/treasureHunter.png": "/Portfolio/static/media/treasureHunter.5cfdb25df54e55902bcf.png",
     "static/media/rushHour.png": "/Portfolio/static/media/rushHour.c46faacacaae9c567d33.png",
     "static/media/resturant.png": "/Portfolio/static/media/resturant.a831ecfca15cf1c148d6.png",
@@ -15,11 +15,11 @@
     "static/media/bTree.png": "/Portfolio/static/media/bTree.a0e731977e2970f9d1dd.png",
     "static/media/gaming.png": "/Portfolio/static/media/gaming.f8158caec3e648dfa873.png",
     "index.html": "/Portfolio/index.html",
-    "main.49a17a04.css.map": "/Portfolio/static/css/main.49a17a04.css.map",
-    "main.a8d205ef.js.map": "/Portfolio/static/js/main.a8d205ef.js.map"
+    "main.bd2322dd.css.map": "/Portfolio/static/css/main.bd2322dd.css.map",
+    "main.c55d82b8.js.map": "/Portfolio/static/js/main.c55d82b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.49a17a04.css",
-    "static/js/main.a8d205ef.js"
+    "static/css/main.bd2322dd.css",
+    "static/js/main.c55d82b8.js"
   ]
 }
