@@ -15,7 +15,7 @@ function Contact(props) {
           <span className ="platLogo">
             {props.toAdd.image}
           </span>
-            <p className ='contactText'>{props.toAdd.text}</p>
+            <p className ={'contactText'}>{props.toAdd.text}</p>
         </div>
         <a href = {props.toAdd.link} target="_blank" rel = "noreferrer">
           <div className = "platLink">

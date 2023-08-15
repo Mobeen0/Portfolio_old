@@ -15,7 +15,16 @@ function Home(props) {
         <span className = "welcome">Welcome To My Website</span> <br/>
           <AiFillGithub style ={{transform:'scale(2)',marginRight:'5%'}} />
           Hi I'm <br /> <span className = "MainItem"> Muhammad Mobeen </span> <br />
-          a Developer.
+          <div className = "wrapper">
+          <div className= "static-Text">
+            a&nbsp;
+          </div>
+            <ul className = "dynamic-Text">
+              <li><span>Student</span></li>
+              <li><span>Developer</span></li>
+              <li><span>Data Scientist</span></li>
+            </ul>
+          </div>
       </Link>
     </div>
   )
