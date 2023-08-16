@@ -1,15 +1,22 @@
 import './styleSheet/Contact.css';
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import {useState,useEffect} from 'react';
+import {useState,useEffect,useRef} from 'react';
 
 function Contact(props) {
   let [load,setLoad] = useState(false);
+  let [mouse,setMouse] = useState(false);
+  let parentDiv = useRef();
   useEffect(()=>{
     setLoad(true)
   },[]);
 
+  let contState = ()=>{
+    setMouse(!mouse);
+  }
+
   return (
-    <div className = {`contactDiv ${load? `firstTime`:``}`}>
+    <div className = {`contactDiv ${load? `firstTime`:``} ${mouse?`clicked`:``}`} ref = {parentDiv} onClick = {contState}
+     onMouseOut ={()=>{setMouse(false)}}>
         <div className ="platHeading">{props.toAdd.platform}</div>
         <div className = "innerContact">
           <span className ="platLogo">

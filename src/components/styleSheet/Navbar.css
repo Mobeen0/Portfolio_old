@@ -16,8 +16,10 @@
 }
 .Navigation.mobileNav{
     position:fixed;
-    height:100vh;
+    height:65vh;
     background:rgba(0,0,0,0.87);
+    padding-top:10vh;
+    border-bottom:1vh solid white;
 }
 
 .list1{
@@ -67,7 +69,6 @@
     
 }
 
-
 .item:hover{
     background:white;
     color:black;
@@ -112,7 +113,8 @@
 }
 
 .navIcon{
-    margin-right:0;
+    margin-right:5%;
+    margin-top:2%;
 }
 .hammerDown{
     position:absolute;
@@ -152,6 +154,7 @@
     }
     .navIcon{
         margin-right:5%;
+        margin-top:1%;
     }
     .active{
         border:none;

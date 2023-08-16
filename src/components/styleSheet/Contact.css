@@ -33,9 +33,28 @@
     transform:translateY(0);
 }
 
+@keyframes cardAnimation{
+    0%{
+        transform:scale(1.1);
+    }
+    20%{
+        transform:scale(1.1);
+        transform:scaleX(-1);
+    }
+    50%{
+        transform:scaleX(-1);
+        transform:translateY(180deg);
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scaleX(-1);
+        transform:translateY(180deg);
+        transform:scale(1.1);
+    }
+}
 
-.contactDiv:hover{
-    transform:scale(1.1);
+.contactDiv.clicked{
+    animation: cardAnimation 1s forwards;
 }
 
 .platLogo{
@@ -122,3 +141,4 @@
     position:relative;
     top:5%;
 }
+
