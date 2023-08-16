@@ -59,7 +59,7 @@
 .dynamic-Text li{
     position:relative;
     top:0;
-    animation: slide 7.5s steps(3) infinite;
+    animation: slide 9s steps(3) infinite;
 }
 
 .dynamic-Text li span{
@@ -69,13 +69,21 @@
 }
 
 @keyframes typing{
-    70%{
+    50%{
         left:100%;
         width:0%;
     }
-    100%{
+    60%{
         left:100%;
         width:0%;
+    }
+    90%{
+        left:0%;
+        width:100%;
+    }
+    100%{
+        left:0%;
+        width:100%;
     }
 }
 
@@ -86,7 +94,7 @@
     position:absolute;
     border-left:2px solid white;
     left:0;
-    animation: typing 2.5s steps(14) infinite;
+    animation: typing 3s steps(14) infinite;
     background:black;
 }
 
@@ -99,7 +107,7 @@
     .dynamic-Text li{
         position:relative;
         top:0;
-        animation: slide 5s steps(2) infinite;
+        animation: slide 6s steps(2) infinite;
     }
     .dynamic-Text{
         margin-top:2%;
