@@ -37,7 +37,9 @@ function Navbar(props){
                             <span className = "navIcon">
                                 {item.icon}
                             </span>
+                            <span className="navText">
                                 {item.name}
+                            </span>
                         </NavLink>
                     </li>
                 ))
