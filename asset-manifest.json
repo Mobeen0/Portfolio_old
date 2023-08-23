@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0ae92745.css",
+    "main.css": "/Portfolio/static/css/main.bd6d3427.css",
     "main.js": "/Portfolio/static/js/main.114a02e8.js",
     "static/media/treasureHunter.png": "/Portfolio/static/media/treasureHunter.5cfdb25df54e55902bcf.png",
     "static/media/rushHour.png": "/Portfolio/static/media/rushHour.c46faacacaae9c567d33.png",
@@ -15,11 +15,11 @@
     "static/media/bTree.png": "/Portfolio/static/media/bTree.a0e731977e2970f9d1dd.png",
     "static/media/gaming.png": "/Portfolio/static/media/gaming.f8158caec3e648dfa873.png",
     "index.html": "/Portfolio/index.html",
-    "main.0ae92745.css.map": "/Portfolio/static/css/main.0ae92745.css.map",
+    "main.bd6d3427.css.map": "/Portfolio/static/css/main.bd6d3427.css.map",
     "main.114a02e8.js.map": "/Portfolio/static/js/main.114a02e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ae92745.css",
+    "static/css/main.bd6d3427.css",
     "static/js/main.114a02e8.js"
   ]
 }
