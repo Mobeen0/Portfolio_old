@@ -93,17 +93,16 @@
     flex-grow:3;
     max-height:100%;
 }
-.logo {
-    max-height:100%;
-    max-width:100%;
-    transform:scale(1.5);
-
-}
 
 .logoFit{
     display:block;
     height:10vh;
     margin-left:3%;
+}
+.logo {
+    max-height:100%;
+    object-fit:scale-down;
+    transform:scale(1.5);
 }
 
 .active{
@@ -116,7 +115,7 @@
 }
 
 .navText{
-    font-size:0.9rem;
+    font-size:1rem;
 }
 
 .hammerDown{
