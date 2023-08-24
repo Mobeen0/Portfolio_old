@@ -5,7 +5,7 @@ import {FaSearch} from 'react-icons/fa';
 import './styleSheet/SearchBox.css';
 import './styleSheet/Project.css';
 
-function Project() {
+function Project(props) {
     let [searchContent, setSearchContent] = useState('');
 
 
@@ -46,7 +46,7 @@ function Project() {
                     }
                     return false;
                 }).map((item,index)=>(
-                    <ProjectsContent toAdd={item} />
+                    <ProjectsContent toAdd={item} mobileOr = {props.mobileOr} />
                 ))
             }
         </div>

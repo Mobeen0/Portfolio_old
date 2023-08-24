@@ -14,6 +14,7 @@ import Scrollbars from 'react-custom-scrollbars';
 function App() {
   let scrollRef  = useRef();
   let [shad,setShad] = useState(false); 
+  let [mobileOr,setMobileOr] = useState(false);
   const scrollbarStyle ={width:'100vw'
                         ,height:'100vh'};
 
@@ -25,6 +26,16 @@ function App() {
       setShad(false);
     }
  }
+
+window.addEventListener("orientationchange", function() {
+  console.log(window.orientation);
+  if(window.orientation === 0){
+    setMobileOr(true);
+  }
+  else{
+    setMobileOr(false);
+  }
+}, false);
 
   return (
     <div>
@@ -42,7 +53,7 @@ function App() {
               <Home />
             }></Route>
             <Route path = '/Project' element = {
-              <Project />
+              <Project mobileOrientation = {mobileOr} />
              }></Route>
             <Route path = '/Contact' element = {
               <div className ="contactGrid">
@@ -60,7 +71,7 @@ function App() {
             }></Route>
         </Routes>
       </div>
-  </Scrollbars>  
+  </Scrollbars>
   </div>
   );
 }

@@ -15,6 +15,7 @@ function Navbar(props){
         }
     }
 
+
     return(
         <nav className = {`Navigation ${props.navBool?`shad`:``} ${hammer? `mobileNav`:``}`}>
             <ul className = {`list1 ${hammer?`mobileNav`:``}`}>

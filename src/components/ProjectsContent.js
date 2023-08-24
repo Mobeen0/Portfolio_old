@@ -28,7 +28,6 @@ function ProjectsContent(props) {
     let handleHoverOff = ()=>{
         myImage.current.style.transform = '';
     }
-
     return (
         <div className ={`projectContainer ${load? `projFirst`:``}`} onMouseOver={handleHoverOn} onMouseLeave={handleHoverOff}>
             <div className="imageCont">
