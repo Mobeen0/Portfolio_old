@@ -23,15 +23,19 @@ function ProjectsContent(props) {
     let handleHoverOn = ()=>{
         myImage.current.style.transition = '0.3s ease-in';
         myImage.current.style.transform = 'scale(1.1)';
+        myImage.current.style.filter = 'grayscale(0%)';
     }
 
     let handleHoverOff = ()=>{
         myImage.current.style.transform = '';
+        myImage.current.style.filter = '';
     }
     return (
         <div className ={`projectContainer ${load? `projFirst`:``}`} onMouseOver={handleHoverOn} onMouseLeave={handleHoverOff}>
             <div className="imageCont">
                 <img src ={props.toAdd.image} alt ="project logo" className ="proj-Image" ref ={myImage}></img>
+                <div className = "lightEffect">
+                </div>
             </div>
             <div className="infoCont">
                 <h1>{props.toAdd.name}</h1>
