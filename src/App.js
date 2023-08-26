@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import {useState,useRef} from 'react';
+import {useState,useRef,useEffect} from 'react';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './components/Home';
@@ -26,16 +26,21 @@ function App() {
       setShad(false);
     }
  }
+  useEffect(()=>{
+    const mediaQuery = window.matchMedia(`(orientation:portrait)`);
+    const handleChange = (event)=>{
+      setMobileOr(event);
+    };
+    mediaQuery.addEventListener('change',handleChange);
 
-window.addEventListener("orientationchange", function() {
-  console.log(window.orientation);
-  if(window.orientation === 0){
-    setMobileOr(true);
-  }
-  else{
-    setMobileOr(false);
-  }
-}, false);
+    setMobileOr(mediaQuery.matches);
+
+    return()=>{
+      mediaQuery.removeEventListener('change',handleChange);
+    }
+    // eslint-disable-next-line
+  },[window.innerWidth]);
+
 
   return (
     <div>

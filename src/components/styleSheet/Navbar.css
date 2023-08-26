@@ -126,6 +126,19 @@
     display:none;
 }
 
+@media (min-height:800px){
+    .logoFit{
+        height:8vh;
+    }
+    .item{
+        font-size:2.5rem;
+    }
+    .navIcon{
+        font-size:2.3rem;
+    }
+
+}
+
 @media (orientation:portrait){
     .Navigation{
         background-color:black;

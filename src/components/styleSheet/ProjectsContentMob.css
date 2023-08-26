@@ -1,0 +1,100 @@
+.Container{
+    width:80vw;
+    aspect-ratio:20/22;
+    opacity:0;
+    transform:translateY(-60%);
+    transition:0.5s;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:15%;
+    display:flex;
+    flex-direction:column;
+    overflow-x:hidden;
+    position:relative;
+    background-color:rebeccapurple;
+    background:linear-gradient(to bottom, rgba(137, 86, 188, 0.6),rgba(153, 191, 196,0.8));
+    border-radius:5%/5%;
+    border:solid 2px rgba(0,0,0,0.7);
+    overflow-y:clip;
+}
+.Container.blurr{
+    backdrop-filter:blur(5px);
+    transition:0.4s;
+}
+.Container.blurr >:not(.hoverInfo){
+    filter:blur(5px);
+    transition:0.4s;
+}
+
+.Container.first{
+    opacity:1;
+    transform:translateY(0%);
+}
+
+.githubLink{
+    aspect-ratio: 1/1;
+    background-color:black;
+    border-radius:50%;
+    color:white;
+    font-size:4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:1%;
+}
+
+.Container a{
+    text-decoration:none;
+    align-self:center;
+    width:20%;
+}
+
+.hoverInfo{
+    position:absolute;
+    background:rgba(255,255,255,0.7);
+    transition:0.6s;
+    top:20%;
+    transform:translateX(200%);
+}
+
+.hoverInfo p{
+    font-size:2rem;
+    font-family:Poppins;
+    text-align:justify;
+}
+
+.imageContainer{
+    width:90%;
+    height:50%;
+    margin:5%;
+    border-radius:3%/3%;
+    background:black;
+    overflow:hidden;
+}
+
+.mobProjImage{
+    max-height:100%;
+    object-fit:scale-down;
+}
+
+
+.projName{
+    color:black;
+    display:flex;
+    flex-direction:column;
+}
+.projName p{
+    font-family:Poppins;
+    font-size:3rem;
+    text-align:center;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.projName span{
+    font-family:Poppins;
+    font-size:1.8rem;
+    color:darkslategray;
+    font-weight:bold;
+    align-self:center;
+}

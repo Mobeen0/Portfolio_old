@@ -1,5 +1,6 @@
 import ProjectsContent from './ProjectsContent';
 import projectsInfo from './config/projectsInfo';
+import ProjectsContentMob from './ProjectsContentMob';
 import {useState} from 'react';
 import {FaSearch} from 'react-icons/fa';
 import './styleSheet/SearchBox.css';
@@ -15,6 +16,27 @@ function Project(props) {
     
     let sepWords = searchContent.split(' ');
 
+    let filterFunc = (item)=>{
+        if(sepWords.length === 1 && sepWords[0] === '')
+            return true;
+        for(let i =0;i<sepWords.length;i++){
+            for(let c =0;c<item.tags.length;c++){
+                if(sepWords[i] ===''){
+                    // do nothing
+                }
+                else{
+                    if(item.tags[c].toUpperCase().includes(sepWords[i].toUpperCase())){
+                        return true;
+                    }
+                }
+            }
+            if(item.name.toUpperCase().includes(sepWords[i].toUpperCase()) && sepWords[i]!== ''){
+                return true;
+            }
+        }
+        return false;
+    }
+
     return (
     <>
         <div className="searchBoxCont">
@@ -25,28 +47,13 @@ function Project(props) {
         </ div>
 
         <div className = "projGrid">
-            {
-                projectsInfo.filter((item)=>{
-                    if(sepWords.length === 1 && sepWords[0] === '')
-                        return true;
-                    for(let i =0;i<sepWords.length;i++){
-                        for(let c =0;c<item.tags.length;c++){
-                            if(sepWords[i] ===''){
-                                // do nothing
-                            }
-                            else{
-                                if(item.tags[c].toUpperCase().includes(sepWords[i].toUpperCase())){
-                                    return true;
-                                }
-                            }
-                        }
-                        if(item.name.toUpperCase().includes(sepWords[i].toUpperCase()) && sepWords[i]!== ''){
-                            return true;
-                        }
-                    }
-                    return false;
-                }).map((item,index)=>(
-                    <ProjectsContent toAdd={item} mobileOr = {props.mobileOr} />
+            {props.mobileOrientation?
+                projectsInfo.filter(filterFunc).map((item,index)=>(
+                    < ProjectsContentMob toAdd = {item}/>
+                ))
+                :
+                projectsInfo.filter(filterFunc).map((item,index)=>(
+                    <ProjectsContent toAdd={item} />
                 ))
             }
         </div>
