@@ -7,6 +7,7 @@ function ProjectsContentMob(props){
     let [showInfo,setShowInfo] = useState(false);
     let [clicked, setClicked] = useState(0);
     let contents = useRef();
+    let mainCont = useRef();
     useEffect(()=>{
         setFirst(true)
     },[])
@@ -20,15 +21,17 @@ function ProjectsContentMob(props){
     useEffect(()=>{
         if(showInfo === true){
             contents.current.style.transform = 'translateX(0%)';
+            mainCont.current.style.transform = 'scale(1.1)';
         }
         else{
             contents.current.style.transform = 'translateX(200%)';
+            mainCont.current.style.transform = 'scale(1)';
         }
         // eslint-disable-next-line 
     },[clicked])
     
     return(
-        <div className = {`Container ${first?`first`:``} ${showInfo?`blurr`:``}`} onClick={clickFunc}>
+        <div className = {`Container ${first?`first`:``} ${showInfo?`blurr`:``}`} onClick={clickFunc} ref ={mainCont}>
             <div className ="imageContainer">
                 <img src = {props.toAdd.image} className = "mobProjImage" />
             </div>
