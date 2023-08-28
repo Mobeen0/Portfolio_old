@@ -1,0 +1,41 @@
+.firstLoadCont{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+
+
+
+@keyframes rotation{
+
+    25%{
+        transform:rotateZ(90deg);
+    }
+    50%{
+        transform:rotateZ(180deg);
+    }
+    75%{
+        transform:rotateZ(270deg);
+    }
+    100%{
+        transform:rotateZ(360deg);
+    }
+}
+
+.firstloadImage{
+    max-width:20vw;
+    height:auto;
+    object-fit:contain;
+    animation : 2s rotation steps(40) infinite forwards;
+}
+
+
+@media(orientation:portrait){
+    .firstloadImage{
+        max-width:50vw;
+    }
+}

@@ -145,6 +145,7 @@
     transform:scale(1.07);
 
     .lightEffect{
+        transition:0.2s;
         display:block;
     }
 }
