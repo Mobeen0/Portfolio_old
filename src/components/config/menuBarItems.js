@@ -18,12 +18,6 @@ const menuBarItems = [{
     iconName: 'GoProjectRoadmap'
 },
 {
-    name:'Contact',
-    icon:<IoMdContact style = {{marginRight:'2%',transform:'scale(1.2)'}} />,
-    path: '/Contact',
-    iconName: 'IoMdContact'
-},
-{
     name:'About',
     icon: <SlUser style = {gap} />,
     path: '/About',

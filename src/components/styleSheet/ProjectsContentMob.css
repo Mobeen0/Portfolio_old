@@ -58,9 +58,11 @@
 }
 
 .hoverInfo p{
-    font-size:2rem;
+    font-size:1.7rem;
     font-family:Poppins;
     text-align:justify;
+    padding-left:2%;
+    padding-right:2%;
 }
 
 .imageContainer{

@@ -17,6 +17,7 @@
 .about:hover{
     cursor:pointer;
     transform:scale(1.05);
+    box-shadow:0px 0px 0.5vw 1vw cyan;
     transition:0.2s;
 }
 

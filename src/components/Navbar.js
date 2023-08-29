@@ -4,7 +4,9 @@ import { Link,NavLink } from "react-router-dom";
 import menuBarItems from './config/menuBarItems';
 import {FaBars} from 'react-icons/fa';
 import {FaX} from 'react-icons/fa6';
+import {MdOutlineContactPage} from 'react-icons/md';
 import {useState} from 'react';
+import CV from '../assets/Mobeen_CV_Web.pdf';
 function Navbar(props){
 
     let [hammer,setHammer] = useState(false);
@@ -45,6 +47,16 @@ function Navbar(props){
                     </li>
                 ))
                 }
+                <li className ="Navbaritem res">
+                <a className ="item res" href ={CV} target="_blank" rel = "noreferrer">
+                    <span className = "navIcon res">
+                    <MdOutlineContactPage />
+                    </span>
+                    <span className ="navText res">
+                        Resume
+                    </span>
+                </a>
+                </li>
             </ul>
         </nav>
     );

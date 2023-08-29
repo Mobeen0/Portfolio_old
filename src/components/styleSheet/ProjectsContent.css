@@ -12,7 +12,7 @@
     transform:translateY(40%);
     transition:0.4s;
     margin-left:7.5%;
-    margin-bottom:5%;
+    margin-bottom:8%;
     margin-right:7.5%;
     border-style:solid;
     border-color:white;
@@ -143,7 +143,7 @@
 
 .projectContainer:hover{
     transform:scale(1.07);
-
+    box-shadow: 0 0 0.3rem 0.4rem cyan;
     .lightEffect{
         transition:0.2s;
         display:block;

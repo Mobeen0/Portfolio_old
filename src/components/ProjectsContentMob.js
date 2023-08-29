@@ -22,10 +22,12 @@ function ProjectsContentMob(props){
         if(showInfo === true){
             contents.current.style.transform = 'translateX(0%)';
             mainCont.current.style.transform = 'scale(1.1)';
+            mainCont.current.style.boxShadow = '0 0 0.4rem 0.5rem cyan';
         }
         else{
             contents.current.style.transform = 'translateX(200%)';
             mainCont.current.style.transform = 'scale(1)';
+            mainCont.current.style.boxShadow = '';
         }
         // eslint-disable-next-line 
     },[clicked])
