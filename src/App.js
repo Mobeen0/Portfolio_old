@@ -4,11 +4,10 @@ import {useState,useRef,useEffect} from 'react';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './components/Home';
-import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import FirstLoad from './components/FirstLoad';
-import aboutInfo from './components/config/aboutInfo';
+import AboutPage from './components/AboutPage';
 import contactInfo from './components/config/contactInfo';
 import Scrollbars from 'react-custom-scrollbars';
 
@@ -50,7 +49,7 @@ function App() {
 
   if(!firstLoad){
     return (
-      <FirstLoad />
+      <FirstLoad type = {mobileOr} />
     );
   }
   else{
@@ -58,8 +57,8 @@ function App() {
       <div>
         <Scrollbars style={scrollbarStyle} onScroll = {myFunc} ref = {scrollRef}>
         <div className = "Main">
+        <Background type = {mobileOr} />
           <Navbar navBool = {shad} /> {/* This is the header Navbar*/}
-          <Background />
             <Routes>
               <Route path = '/' element = 
               {
@@ -81,9 +80,7 @@ function App() {
               }></Route>
               <Route path = '/About' element = 
               {<>
-                {aboutInfo.map((item,index)=>(
-                  <About toAdd = {item} />
-                ))}
+                <AboutPage />
               </>
               }></Route>
           </Routes>

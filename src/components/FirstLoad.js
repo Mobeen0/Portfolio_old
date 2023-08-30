@@ -2,10 +2,10 @@ import './styleSheet/FirstLoad.css';
 import logoImage from '../assets/myNewLogo.png';
 import Background from './Background';
 
-function FirstLoad() {
+function FirstLoad(props) {
   return (
     <div className = "firstLoadCont">
-        <Background />
+        <Background type = {props.type} />
             <img src ={logoImage} className = "firstloadImage" alt ="logo" />
     </div>
   )

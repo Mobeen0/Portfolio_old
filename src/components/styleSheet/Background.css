@@ -1,0 +1,10 @@
+.mobileBackground{
+    position:fixed;
+    background:linear-gradient(to top, rgba(14, 51, 83, 0.6),rgba(153, 191, 196,0.8));
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    display:block;
+    z-index:-1;
+}
