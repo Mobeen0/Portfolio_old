@@ -66,7 +66,7 @@ function App() {
               }></Route>
               <Route path = '/Portfolio' element = 
               {
-                <Home />
+                <Home mobileOrientation= {mobileOr}/>
               }></Route>
               <Route path = '/Project' element = {
                 <Project mobileOrientation = {mobileOr} />
