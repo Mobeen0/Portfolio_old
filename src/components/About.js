@@ -9,9 +9,9 @@ function About(props) {
   },[]);
 
   return (
-    <div className = {`about ${load?`firstTime`:``}`}>
+    <div className = {`about ${load?`firstTime`:``} ${props.mobileOrientation?`mobileAbout`:``}`}>
         <img src={props.toAdd.image} alt = 'fast University Logo ' className ='uniLogo' ></img>
-        <div className = "myText">
+        <div className = {`myText ${props.mobileOrientation?`change`:``}`}>
           <p className="aboutDesc">{props.toAdd.info}</p>
         </div> 
     </div>

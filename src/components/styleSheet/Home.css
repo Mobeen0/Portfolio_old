@@ -32,6 +32,9 @@
 .MainItem{
     color:slategrey;
 }
+.homeChange{
+    color:rgb(34, 70, 34);
+}
 .welcome{
     font-size:1rem;
 }

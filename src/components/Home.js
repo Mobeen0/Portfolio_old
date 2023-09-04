@@ -16,7 +16,7 @@ function Home(props) {
       <Link className = 'link' to ='/'>
         <span className = "welcome">Welcome To My Website</span> <br/>
           <AiFillGithub style ={{transform:'scale(2)',marginRight:'5%'}} />
-          Hi I'm <br /> <span className = "MainItem"> Muhammad Mobeen </span> <br />
+          Hi I'm <br /> <span className = {`MainItem ${props.mobileOrientation?`homeChange`:``}`}> Muhammad Mobeen </span> <br />
           <div className = "wrapper">
           <div className= "static-Text">
             a&nbsp;

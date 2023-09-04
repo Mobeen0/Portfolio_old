@@ -62,7 +62,7 @@ function App() {
             <Routes>
               <Route path = '/' element = 
               {
-                <Home />
+                <Home mobileOrientation= {mobileOr}/>
               }></Route>
               <Route path = '/Portfolio' element = 
               {
@@ -80,7 +80,7 @@ function App() {
               }></Route>
               <Route path = '/About' element = 
               {<>
-                <AboutPage />
+                <AboutPage mobileOrientation = {mobileOr} />
               </>
               }></Route>
           </Routes>

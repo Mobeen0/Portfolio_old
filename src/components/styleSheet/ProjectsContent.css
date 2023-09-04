@@ -1,7 +1,7 @@
 .projectContainer{
     width:28vw;
     aspect-ratio: 15/14;
-    border-radius: 20%/20%;
+    border-radius: 5%;
     background-color:white;
     display:flex;
     flex-direction:column;
@@ -11,9 +11,9 @@
     opacity:0;
     transform:translateY(40%);
     transition:0.4s;
-    margin-left:7.5%;
+    margin-left:auto;
     margin-bottom:8%;
-    margin-right:7.5%;
+    margin-right:auto;
     border-style:solid;
     border-color:white;
     border-width:0.1rem;

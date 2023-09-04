@@ -22,12 +22,14 @@ function ProjectsContentMob(props){
         if(showInfo === true){
             contents.current.style.transform = 'translateX(0%)';
             mainCont.current.style.transform = 'scale(1.1)';
-            mainCont.current.style.boxShadow = '0 0 0.4rem 0.5rem cyan';
+            mainCont.current.style.boxShadow = '0 0 0.7rem 1.2rem Turquoise';
+            mainCont.current.style.borderColor= 'cyan';
         }
         else{
             contents.current.style.transform = 'translateX(200%)';
             mainCont.current.style.transform = 'scale(1)';
             mainCont.current.style.boxShadow = '';
+            mainCont.current.style.borderColor= '';
         }
         // eslint-disable-next-line 
     },[clicked])
@@ -35,7 +37,7 @@ function ProjectsContentMob(props){
     return(
         <div className = {`Container ${first?`first`:``} ${showInfo?`blurr`:``}`} onClick={clickFunc} ref ={mainCont}>
             <div className ="imageContainer">
-                <img src = {props.toAdd.image} className = "mobProjImage" />
+                <img src = {props.toAdd.image} alt = "project" className = "mobProjImage" />
             </div>
             <div className ="projName">
                 <p>

@@ -20,6 +20,10 @@
     box-shadow:0px 0px 0.5vw 1vw cyan;
     transition:0.2s;
 }
+.about.mobileAbout:hover{
+    box-shadow:0px 0px 1.2vw 1.4vw turquoise;
+    border-color:green;
+}
 
 .uniLogo{
     width:10vw;
@@ -39,9 +43,13 @@
     font-size:1.2rem;
     color:black;
     text-align:justify;
-    margin-right:3%;
+    margin-right:3%;    
 
 }
 .aboutDesc{
     margin-left:5%;
+}
+
+.change{
+    color:white;
 }

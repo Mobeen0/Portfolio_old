@@ -11,19 +11,18 @@
     flex-direction:column;
     overflow-x:hidden;
     position:relative;
-    background-color:rebeccapurple;
-    background:linear-gradient(to bottom, rgba(137, 86, 188, 0.6),rgba(153, 191, 196,0.8));
+    background:slategray;
     border-radius:5%/5%;
     border:solid 2px rgba(0,0,0,0.7);
     overflow-y:clip;
 }
 .Container.blurr{
     backdrop-filter:blur(5px);
-    transition:0.4s;
+    transition:ease-out 0.4s;
 }
 .Container.blurr >:not(.hoverInfo){
     filter:blur(5px);
-    transition:0.4s;
+    transition:ease-in 0.4s;
 }
 
 .Container.first{
@@ -72,6 +71,7 @@
     border-radius:3%/3%;
     background:black;
     overflow:hidden;
+    border:solid 3px black;
 }
 
 .mobProjImage{
@@ -82,7 +82,7 @@
 
 
 .projName{
-    color:black;
+    color:white;
     display:flex;
     flex-direction:column;
 }
