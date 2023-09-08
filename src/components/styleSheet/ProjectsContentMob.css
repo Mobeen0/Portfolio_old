@@ -11,7 +11,7 @@
     flex-direction:column;
     overflow-x:hidden;
     position:relative;
-    background:slategray;
+    background:White;
     border-radius:5%/5%;
     border:solid 2px rgba(0,0,0,0.7);
     overflow-y:clip;
@@ -64,6 +64,14 @@
     padding-right:2%;
 }
 
+.hoverInfo div{
+    font-size:2rem;
+    color:cyan;
+    text-align:center;
+    margin-top:4%;
+    margin-bottom:4%;
+}
+
 .imageContainer{
     width:90%;
     height:50%;
@@ -82,7 +90,7 @@
 
 
 .projName{
-    color:white;
+    color:black;
     display:flex;
     flex-direction:column;
 }

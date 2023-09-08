@@ -1,10 +1,14 @@
-import ProjectsContent from './ProjectsContent';
+import React from 'react';
+//import ProjectsContent from './ProjectsContent';
 import projectsInfo from './config/projectsInfo';
-import ProjectsContentMob from './ProjectsContentMob';
+//import ProjectsContentMob from './ProjectsContentMob';
 import {useState} from 'react';
 import {FaSearch} from 'react-icons/fa';
 import './styleSheet/SearchBox.css';
 import './styleSheet/Project.css';
+
+const ProjectsContent = React.lazy(()=>import('./ProjectsContent'));
+const ProjectsContentMob = React.lazy(()=>import('./ProjectsContentMob'));
 
 function Project(props) {
     let [searchContent, setSearchContent] = useState('');
@@ -46,17 +50,19 @@ function Project(props) {
             </div>
         </ div>
 
-        <div className = "projGrid">
-            {props.mobileOrientation?
-                projectsInfo.filter(filterFunc).map((item,index)=>(
-                    < ProjectsContentMob toAdd = {item}/>
-                ))
-                :
-                projectsInfo.filter(filterFunc).map((item,index)=>(
-                    <ProjectsContent toAdd={item} />
-                ))
-            }
-        </div>
+        <React.Suspense fallback = 'loading...'>
+            <div className = "projGrid">
+                {props.mobileOrientation?
+                    projectsInfo.filter(filterFunc).map((item,index)=>(
+                        < ProjectsContentMob toAdd = {item}/>
+                    ))
+                    :
+                    projectsInfo.filter(filterFunc).map((item,index)=>(
+                        <ProjectsContent toAdd={item} />
+                    ))
+                }
+            </div>
+        </React.Suspense>
     </>        
     );
 

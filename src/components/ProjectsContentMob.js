@@ -1,5 +1,5 @@
 import {useState,useEffect,useRef} from 'react';
-import {FaFolder} from 'react-icons/fa';
+import {FaFolder,FaQuoteLeft} from 'react-icons/fa';
 import './styleSheet/ProjectsContentMob.css';
 
 function ProjectsContentMob(props){
@@ -53,7 +53,10 @@ function ProjectsContentMob(props){
                 </div>
             </a>
             <div className = "hoverInfo" ref ={contents}>
-                <p>{props.toAdd.description}</p>
+                <div>
+                    <FaQuoteLeft/>
+                </div>
+                <p>"<i>{props.toAdd.description}</i>"</p>
             </div>
         </div>
     );

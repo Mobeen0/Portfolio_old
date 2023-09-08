@@ -1,15 +1,18 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
+import React from 'react';
 import {useState,useRef,useEffect} from 'react';
 import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './components/Home';
 import Contact from './components/Contact';
-import Project from './components/Project';
+//import Project from './components/Project';
 import FirstLoad from './components/FirstLoad';
-import AboutPage from './components/AboutPage';
+//import AboutPage from './components/AboutPage';
 import contactInfo from './components/config/contactInfo';
 import Scrollbars from 'react-custom-scrollbars';
+const Project  = React.lazy(()=>import('./components/Project'));
+const AboutPage = React.lazy(()=>import('./components/AboutPage'));
 
 function App() {
   let scrollRef  = useRef();
@@ -62,14 +65,16 @@ function App() {
             <Routes>
               <Route path = '/' element = 
               {
-                <Home mobileOrientation= {mobileOr}/>
+                <Home />
               }></Route>
               <Route path = '/Portfolio' element = 
               {
-                <Home mobileOrientation= {mobileOr}/>
+                <Home />
               }></Route>
               <Route path = '/Project' element = {
+                <React.Suspense>
                 <Project mobileOrientation = {mobileOr} />
+                </React.Suspense>
               }></Route>
               <Route path = '/Contact' element = {
                 <div className ="contactGrid">
@@ -79,9 +84,9 @@ function App() {
                 </div>
               }></Route>
               <Route path = '/About' element = 
-              {<>
-                <AboutPage mobileOrientation = {mobileOr} />
-              </>
+              {<React.Suspense>
+                <AboutPage />
+              </React.Suspense>
               }></Route>
           </Routes>
         </div>
