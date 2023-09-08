@@ -1,6 +1,6 @@
 .mobileBackground{
     position:fixed;
-    background:linear-gradient(to top,#73C8A9,#373B44 );
+    background:linear-gradient(to top,rgba(72, 177, 191,0.5),rgba(255,255,255,0.5),rgba(72, 177, 191,0.5));
     width:100vw;
     height:100vh;
     top:0;
