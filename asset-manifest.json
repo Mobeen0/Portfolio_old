@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.495c74a6.css",
-    "main.js": "/Portfolio/static/js/main.fd98ac07.js",
-    "static/css/177.16c5056b.chunk.css": "/Portfolio/static/css/177.16c5056b.chunk.css",
+    "main.js": "/Portfolio/static/js/main.6563b7a7.js",
+    "static/css/177.03f6ed87.chunk.css": "/Portfolio/static/css/177.03f6ed87.chunk.css",
     "static/js/177.2f2c2348.chunk.js": "/Portfolio/static/js/177.2f2c2348.chunk.js",
     "static/css/806.1b2c388d.chunk.css": "/Portfolio/static/css/806.1b2c388d.chunk.css",
     "static/js/806.9ff871a9.chunk.js": "/Portfolio/static/js/806.9ff871a9.chunk.js",
@@ -28,8 +28,8 @@
     "static/media/gaming.png": "/Portfolio/static/media/gaming.f8158caec3e648dfa873.png",
     "index.html": "/Portfolio/index.html",
     "main.495c74a6.css.map": "/Portfolio/static/css/main.495c74a6.css.map",
-    "main.fd98ac07.js.map": "/Portfolio/static/js/main.fd98ac07.js.map",
-    "177.16c5056b.chunk.css.map": "/Portfolio/static/css/177.16c5056b.chunk.css.map",
+    "main.6563b7a7.js.map": "/Portfolio/static/js/main.6563b7a7.js.map",
+    "177.03f6ed87.chunk.css.map": "/Portfolio/static/css/177.03f6ed87.chunk.css.map",
     "177.2f2c2348.chunk.js.map": "/Portfolio/static/js/177.2f2c2348.chunk.js.map",
     "806.1b2c388d.chunk.css.map": "/Portfolio/static/css/806.1b2c388d.chunk.css.map",
     "806.9ff871a9.chunk.js.map": "/Portfolio/static/js/806.9ff871a9.chunk.js.map",
@@ -41,6 +41,6 @@
   },
   "entrypoints": [
     "static/css/main.495c74a6.css",
-    "static/js/main.fd98ac07.js"
+    "static/js/main.6563b7a7.js"
   ]
 }
