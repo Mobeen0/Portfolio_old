@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.495c74a6.css",
-    "main.js": "/Portfolio/static/js/main.da2ef42f.js",
-    "static/css/897.3835d9d8.chunk.css": "/Portfolio/static/css/897.3835d9d8.chunk.css",
-    "static/js/897.9e355ad9.chunk.js": "/Portfolio/static/js/897.9e355ad9.chunk.js",
+    "main.js": "/Portfolio/static/js/main.7185cab8.js",
+    "static/css/76.1ade3a69.chunk.css": "/Portfolio/static/css/76.1ade3a69.chunk.css",
+    "static/js/76.7ecd1f5a.chunk.js": "/Portfolio/static/js/76.7ecd1f5a.chunk.js",
     "static/css/806.1b2c388d.chunk.css": "/Portfolio/static/css/806.1b2c388d.chunk.css",
     "static/js/806.9ff871a9.chunk.js": "/Portfolio/static/js/806.9ff871a9.chunk.js",
-    "static/css/672.880f36ec.chunk.css": "/Portfolio/static/css/672.880f36ec.chunk.css",
-    "static/js/672.f7aec3f2.chunk.js": "/Portfolio/static/js/672.f7aec3f2.chunk.js",
+    "static/css/672.08b455f9.chunk.css": "/Portfolio/static/css/672.08b455f9.chunk.css",
+    "static/js/672.8c97bae2.chunk.js": "/Portfolio/static/js/672.8c97bae2.chunk.js",
     "static/css/907.413ad9ff.chunk.css": "/Portfolio/static/css/907.413ad9ff.chunk.css",
     "static/js/907.6656b91e.chunk.js": "/Portfolio/static/js/907.6656b91e.chunk.js",
     "static/js/606.e317294a.chunk.js": "/Portfolio/static/js/606.e317294a.chunk.js",
@@ -16,6 +16,7 @@
     "static/media/resturant.png": "/Portfolio/static/media/resturant.a831ecfca15cf1c148d6.png",
     "static/media/uefaLeague.png": "/Portfolio/static/media/uefaLeague.a6e83454aa2327b8b004.png",
     "static/media/hamiltonian.png": "/Portfolio/static/media/hamiltonian.bc1a4805a5aae9e3903e.png",
+    "static/media/immunSurvey.png": "/Portfolio/static/media/immunSurvey.b236011354932f680b22.png",
     "static/media/myNewLogo.png": "/Portfolio/static/media/myNewLogo.b629c50ab758178dc74b.png",
     "static/media/Mobeen_CV_Web.pdf": "/Portfolio/static/media/Mobeen_CV_Web.d4314c521546233cf991.pdf",
     "static/media/brickBreaker.png": "/Portfolio/static/media/brickBreaker.d37f6ed5c5f4e9b28e94.png",
@@ -26,19 +27,19 @@
     "static/media/gaming.png": "/Portfolio/static/media/gaming.f8158caec3e648dfa873.png",
     "index.html": "/Portfolio/index.html",
     "main.495c74a6.css.map": "/Portfolio/static/css/main.495c74a6.css.map",
-    "main.da2ef42f.js.map": "/Portfolio/static/js/main.da2ef42f.js.map",
-    "897.3835d9d8.chunk.css.map": "/Portfolio/static/css/897.3835d9d8.chunk.css.map",
-    "897.9e355ad9.chunk.js.map": "/Portfolio/static/js/897.9e355ad9.chunk.js.map",
+    "main.7185cab8.js.map": "/Portfolio/static/js/main.7185cab8.js.map",
+    "76.1ade3a69.chunk.css.map": "/Portfolio/static/css/76.1ade3a69.chunk.css.map",
+    "76.7ecd1f5a.chunk.js.map": "/Portfolio/static/js/76.7ecd1f5a.chunk.js.map",
     "806.1b2c388d.chunk.css.map": "/Portfolio/static/css/806.1b2c388d.chunk.css.map",
     "806.9ff871a9.chunk.js.map": "/Portfolio/static/js/806.9ff871a9.chunk.js.map",
-    "672.880f36ec.chunk.css.map": "/Portfolio/static/css/672.880f36ec.chunk.css.map",
-    "672.f7aec3f2.chunk.js.map": "/Portfolio/static/js/672.f7aec3f2.chunk.js.map",
+    "672.08b455f9.chunk.css.map": "/Portfolio/static/css/672.08b455f9.chunk.css.map",
+    "672.8c97bae2.chunk.js.map": "/Portfolio/static/js/672.8c97bae2.chunk.js.map",
     "907.413ad9ff.chunk.css.map": "/Portfolio/static/css/907.413ad9ff.chunk.css.map",
     "907.6656b91e.chunk.js.map": "/Portfolio/static/js/907.6656b91e.chunk.js.map",
     "606.e317294a.chunk.js.map": "/Portfolio/static/js/606.e317294a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.495c74a6.css",
-    "static/js/main.da2ef42f.js"
+    "static/js/main.7185cab8.js"
   ]
 }
