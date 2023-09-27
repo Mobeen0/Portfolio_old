@@ -16,10 +16,7 @@
     border:solid 2px rgba(0,0,0,0.7);
     overflow-y:clip;
 }
-.Container.blurr{
-    backdrop-filter:blur(5px);
-    transition:ease-out 0.4s;
-}
+
 .Container.blurr >:not(.hoverInfo){
     filter:blur(5px);
     transition:ease-in 0.4s;

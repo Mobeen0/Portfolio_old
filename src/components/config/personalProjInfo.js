@@ -1,4 +1,5 @@
 import immun from '../../assets/immunSurvey.png';
+import portFolio from '../../assets/portFolio.png';
 
 let persprojectsInfo = [
 
@@ -9,6 +10,14 @@ let persprojectsInfo = [
     "tags":['Python','Data Science','jupyter','pandas','numpy','Data Analysis'],
     "image": immun,
     "main":'Python'
+    },
+    {
+        "name": 'Portfolio Website',
+        "description": 'This website that YOU are using! It was built using React framework. DOM manipulation along with its ability to create reusable components allowed me to create a dynamic Single Page Application.',
+        "repoLink": 'https://github.com/Mobeen0/Portfolio',
+        "tags":['Reactjs','HTML','CSS','JavaScript','Website','SPA','npm'],
+        "image":portFolio,
+        "main":"JavaScript"
     }
 ]
 
