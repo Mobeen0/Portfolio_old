@@ -1,7 +1,6 @@
 import React from 'react';
-//import ProjectsContent from './ProjectsContent';
 import projectsInfo from './config/projectsInfo';
-//import ProjectsContentMob from './ProjectsContentMob';
+import persprojectsInfo from './config/personalProjInfo';
 import {useState} from 'react';
 import {FaSearch} from 'react-icons/fa';
 import './styleSheet/SearchBox.css';
@@ -52,6 +51,9 @@ function Project(props) {
 
         <React.Suspense fallback = 'loading...'>
             <div className = "projGrid">
+            <h1 className = "ProjHeaders">
+                University Projects
+            </h1>
                 {props.mobileOrientation?
                     projectsInfo.filter(filterFunc).map((item,index)=>(
                         < ProjectsContentMob toAdd = {item}/>
@@ -61,6 +63,18 @@ function Project(props) {
                         <ProjectsContent toAdd={item} />
                     ))
                 }
+            <h1 className = "ProjHeaders">
+                Personal Projects
+            </h1>
+            {props.mobileOrientation?
+                persprojectsInfo.filter(filterFunc).map((item,map)=>(
+                    < ProjectsContentMob toAdd = {item} /> 
+                    ))
+                :
+                persprojectsInfo.filter(filterFunc).map((item,map)=>(
+                    <ProjectsContent toAdd = {item} />
+                ))
+            }
             </div>
         </React.Suspense>
     </>        

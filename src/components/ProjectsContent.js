@@ -4,6 +4,7 @@ import './styleSheet/ProjectsContent.css';
 
 function ProjectsContent(props) {
     let myImage = useRef(null);
+    let header1 = useRef(null);
 
     let [load,setLoad] = useState(false);
     useEffect(()=>{
@@ -24,11 +25,13 @@ function ProjectsContent(props) {
         myImage.current.style.transition = '0.3s ease-in';
         myImage.current.style.transform = 'scale(1.1)';
         myImage.current.style.filter = 'grayscale(0%)';
+        header1.current.style.color = 'DarkBlue';
     }
 
     let handleHoverOff = ()=>{
         myImage.current.style.transform = '';
         myImage.current.style.filter = '';
+        header1.current.style.color = '';
     }
     return (
         <div className ={`projectContainer ${load? `projFirst`:``}`} onMouseOver={handleHoverOn} onMouseLeave={handleHoverOff}>
@@ -38,7 +41,7 @@ function ProjectsContent(props) {
                 </div>
             </div>
             <div className="infoCont">
-                <h1>{props.toAdd.name}</h1>
+                <h1 ref = {header1}>{props.toAdd.name}</h1>
                 <p className ="proj-info-text">{props.toAdd.description}</p>
             </div>
             <div className= "tagsCont">
