@@ -6,15 +6,14 @@ import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Home from './components/Home';
 import Contact from './components/Contact';
-//import Project from './components/Project';
 import FirstLoad from './components/FirstLoad';
-//import AboutPage from './components/AboutPage';
 import contactInfo from './components/config/contactInfo';
 import Scrollbars from 'react-custom-scrollbars';
 const Project  = React.lazy(()=>import('./components/Project'));
 const AboutPage = React.lazy(()=>import('./components/AboutPage'));
 
 function App() {
+
   let scrollRef  = useRef();
   let [shad,setShad] = useState(false); 
   let [mobileOr,setMobileOr] = useState(false);
@@ -85,7 +84,7 @@ function App() {
               }></Route>
               <Route path = '/About' element = 
               {<React.Suspense>
-                <AboutPage />
+                <AboutPage mobileOrientation = {mobileOr} />
               </React.Suspense>
               }></Route>
           </Routes>
