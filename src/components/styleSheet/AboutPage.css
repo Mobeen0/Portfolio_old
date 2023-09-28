@@ -16,10 +16,20 @@
     color:white;
 }
 
+.gitCalendar{
+    margin-bottom: 3vh;
+    display:flex;
+    justify-content:center;
+}
+
+
 @media(orientation:portrait){
     .traintrack{
         position:fixed;
         bottom:0;
+    }
+    .gitCalendar{
+        margin: 10vh 9vw 20vh 5vw;
     }
 }
 
@@ -42,3 +52,5 @@
     margin-right:5vw;
     display:inline-block;
 }
+
+
